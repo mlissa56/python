@@ -2,6 +2,7 @@ from typing import Optional, List
 from account.model import Account, AccountStatus
 from account.storage.protocol import AccountsStorageProtocol
 
+# рабочее решение
 
 class AccountsPostgresStorage(AccountsStorageProtocol):
     def __init__(self):
