@@ -32,13 +32,13 @@ class AccountsPostgresStorage(AccountsStorageProtocol):
     def set_account_processing(self, account_id: int) -> Optional[Account]:
         account = self.get_account_by_id(account_id)
         if account:
-            account.status = AccountStatus.PROCESSING  # Set the status to AccountStatus.PROCESSING
+            account.status = AccountStatus.PROCESSING
             return account
         return None
 
     def set_account_pending(self, account_id: int) -> Optional[Account]:
         account = self.get_account_by_id(account_id)
         if account:
-            account.status = AccountStatus.PENDING  # Set the status to AccountStatus.PENDING
+            account.status = AccountStatus.PENDING
             return account
         return None
